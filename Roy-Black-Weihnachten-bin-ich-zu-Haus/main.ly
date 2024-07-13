@@ -1,7 +1,7 @@
 \version "2.22.1"
 
 \header {
-  title = "Weihnachten Bin Ich Zuhaus"
+  title = "Weihnachten bin ich zu Haus"
   composer = "Roy Black"
 }
 
