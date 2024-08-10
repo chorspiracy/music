@@ -14,7 +14,7 @@ global = {
 soprano = \relative e' {
   \global
   % Intro
-  e4 a8 b d4 | e8 d g,4 b8 a \fermata |
+  b4 e8 fis a4 | b8 a d,4 fis \fermata |
   
   \repeat volta 2 {
   % Strophe
@@ -120,7 +120,7 @@ bass = \relative e {
 verseOne = \lyricmode {
   % Intro
   Al -- le -- lu -- ia
-  Al -- le -- lu -- i -- a
+  Al -- le -- lu -- ia
   
   % Strophe
   Al -- le -- lu -- ia
