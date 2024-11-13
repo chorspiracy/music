@@ -49,12 +49,12 @@ sopranoVoice = \relative c'' {
   r8 cis b cis | cis1 | r2
   % Refrain
   r2 |
-  r8 a8 a cis cis2 |
-  r8 gis gis a a2 |
-  r8 a a cis cis2 |
-  r8 gis gis a a
+  r8 cis,8 cis fis fis2 |
+  r8 e fis e cis2 |
+  r8 cis cis fis fis2 |
+  r8 e fis e cis
   
-  a8 a cis | cis2
+  cis8 cis fis | fis2
   r8 gis gis a | a2
   r8 a a cis | cis2
   r8 gis gis a | a2
@@ -235,7 +235,7 @@ altoVoice = \relative a {
   e8 fis | cis1 | r2
   % Refrain
   r8 cis cis fis | fis2 r8 b, b cis | cis2 r8
-  cis cis fis | fis2 r8 b, b cis | cis2 r8 fis e e | d2 r8 fis e fis | d2 r8 fis e fis | cis1 | r2
+  cis cis fis | fis2 r8 b, b cis | cis2 r8 fis e fis | d2 r8 fis e fis | d2 r8 fis e fis | cis1 | r2
   % Verse 3
   r8 cis cis fis | fis2 r8 b, b cis | cis2 r8
   cis cis fis | fis2 r8 b, b cis | cis2
