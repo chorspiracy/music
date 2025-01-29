@@ -230,3 +230,67 @@ verseComp = \lyricmode {
   \layout { }
   \midi { }
 }
+
+\score {
+  \new Staff \with {
+    midiInstrument = "choir aahs"
+    instrumentName = "Soprano"
+  } {
+    \soprano
+  }
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 60 4)
+    }
+    filename = "soprano.midi"
+  }
+}
+
+\score {
+  \new Staff \with {
+    midiInstrument = "choir aahs"
+    instrumentName = "Alto"
+  } {
+    \alto
+  }
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 60 4)
+    }
+    filename = "alto.midi"
+  }
+}
+
+\score {
+  \new Staff \with {
+    midiInstrument = "choir aahs"
+    instrumentName = "Tenor"
+  } {
+    \tenor
+  }
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 60 4)
+    }
+    filename = "tenor.midi"
+  }
+}
+
+\score {
+  \new Staff \with {
+    midiInstrument = "choir aahs"
+    instrumentName = "Bass"
+  } {
+    \bass
+  }
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 60 4)
+    }
+    filename = "bass.midi"
+  }
+}

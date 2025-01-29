@@ -106,7 +106,7 @@ verseSopranoVoice = \lyricmode {
   Au -- rin -- ko nou -- si hii -- pi -- en,
   Ok -- sal -- la syn -- tyi var -- pu -- nen,
   
-  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let.
 }
 
 mezzoSopranoVoice = \relative a' {
@@ -145,7 +145,7 @@ mezzoSopranoVoice = \relative a' {
   r8 fis fis fis | b2
   r8 fis fis fis | b2
   r8 fis fis fis | fis2
-  r8 gis gis gis | gb2
+  r8 gis gis gis | gis2
   r8 fis fis fis | gis2
   r8 a a a | a2
   r8 fis e fis | fis1 |
@@ -173,34 +173,34 @@ mezzoSopranoVoice = \relative a' {
 
 verseMezzoSopranoVoice = \lyricmode {
   % Refrain
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let,
   % Verse 1
   Pei -- lil -- le näy -- tit kas -- vo -- si,
   Ja pei -- li hy -- myn hei -- jas -- ti,
   Lu -- pa -- sit lau -- laa ko -- vem -- paa,
   Rak -- kau -- den pen -- saan is -- tut -- taa,
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _
-  _ _ _ _
+  % Refrain
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let,
+  % Verse 2
+  Tah -- di -- ton tuu -- li kuis -- ka -- si,
+  Kor -- vaa -- si maail -- man ih -- mei -- tä,
+  Le -- vo -- ton tuu -- li~u -- te -- li -- aan korvaan,
+  Mer -- en poh -- jan sa -- lai -- suu -- det pal -- jas -- ti,
+  % Refrain
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let,
+  % Verse 3
+  Tar -- peek -- si kul -- taa löy -- sit kait,
+  Kyl -- läs -- tyit mer -- ten poh -- jiin kait,
+  Äk -- ki -- ä us -- va hal -- la -- yöt,
+  Toi -- vat maan pää -- lle en -- si jäät,
+  Vaa -- le -- an aa -- mun pos -- kes -- sa,
+  Taas lau -- le -- let.
   % Refrain Fine
   Au -- rin -- ko nou -- si hii -- pi -- en,
   Ok -- sal -- la syn -- tyi var -- pu -- nen,
@@ -208,7 +208,7 @@ verseMezzoSopranoVoice = \lyricmode {
   Ok -- sal -- la syn -- tyi var -- pu -- nen,
   Au -- rin -- ko nou -- si hii -- pi -- en,
   Ok -- sal -- la syn -- tyi var -- pu -- nen,
-  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let.
 
 }
 
@@ -270,6 +270,39 @@ altoVoice = \relative a {
 
 verseAltoVoice = \lyricmode {
   % Lyrics follow here.  
+  % Verse 1
+  Pei -- lil -- le näy -- tit kas -- vo -- si,
+  Ja pei -- li hy -- myn hei -- jas -- ti,
+  Lu -- pa -- sit lau -- laa ko -- vem -- paa,
+  Rak -- kau -- den pen -- saan is -- tut -- taa,
+  % Refrain
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let,
+  % Verse 2
+  Tah -- di -- ton tuu -- li kuis -- ka -- si,
+  Kor -- vaa -- si maail -- man ih -- mei -- tä,
+  Le -- vo -- ton tuu -- li~u -- te -- li -- aan korvaan,
+  Mer -- en poh -- jan sa -- lai -- suu -- det pal -- jas -- ti,
+  % Refrain
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let,
+  % Verse 3
+  Tar -- peek -- si kul -- taa löy -- sit kait,
+  Kyl -- läs -- tyit mer -- ten poh -- jiin kait,
+  Äk -- ki -- ä us -- va hal -- la -- yöt,
+  Toi -- vat maan pää -- lle en -- si jäät,
+  Vaa -- le -- an aa -- mun pos -- kes -- sa,
+  Taas lau -- le -- let.
+  % Refrain Fine
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  Au -- rin -- ko nou -- si hii -- pi -- en,
+  Ok -- sal -- la syn -- tyi var -- pu -- nen,
+  He -- rä -- sin het -- keks, u -- nis -- sa -- si lau -- le -- let.
 }
 
 sopranoVoicePart = \new Staff \with {
