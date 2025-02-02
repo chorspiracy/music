@@ -1,7 +1,7 @@
 \version "2.24.3"
 
 \header {
-  title = "Verweil mit mir"
+  title = "Verweil bei mir (Abide with me)"
 }
 
 global = {
@@ -12,7 +12,6 @@ global = {
 
 soprano = \relative c'' {
   \global
-  % Music follows here.
   g2 g4 f | es2 bes' | c4 bes bes as | g1 |
   g2 as4 bes | c2 bes | as4 f g a | bes1 |
   g2 g4 f | es2 bes' | bes4 as as g | f1 |
@@ -21,53 +20,50 @@ soprano = \relative c'' {
 
 alto = \relative c' {
   \global
-  % Music follows here.
-  
+  es2 d4 d | es2 es | es4 d es f | es1 | \break
+  es2 es4 es | es2 es | es4 f es es | d1 | \break
+  es2 es4 d | es2 es | es4 es e e | c1 | \break
+  d2 es4 d | es d es f | es2 d | bes1 |
 }
 
 tenor = \relative c' {
   \global
-  % Music follows here.
-  
+  bes2 bes4 as | g2 es | es4 bes' bes bes | bes1 |
+  bes2 as4 g | as2 g | c4 bes bes f | f1 |
+  g4 as bes as | g2 es'4( d) | c c c bes | as1 |
+  bes2 bes4 bes | bes as g c | bes2 as | g1 |
 }
 
 bass = \relative c {
   \global
-  % Music follows here.
-  
+  es2 bes4 bes | c2 g | as4 bes c d | es1 |
+  es4( d) c bes | as2 es' | f4 d es c | bes1 |
+  es2 bes4 bes | c2 g | as4. bes8 c4 c | f1 |
+  as2 g4 f | es bes c as | bes2 bes | <es \tweak ParenthesesItem.font-size #-2 \parenthesize bes \tweak ParenthesesItem.font-size #-2 \parenthesize es,>1 |
 }
 
 verseOne = \lyricmode {
   \set stanza = "1."
-  % Lyrics follow here.
-  Ver -- weil mit mir, schon dimmt des Ta -- ges Schein,
-  bricht tie -- fer Nacht, Oh Herr, mit mir ver -- weil,
-  En -- det das Tun, und je -- de Hil -- fe zagt,
-  Hel -- fer der Hilf -- lo -- sen, ver -- weil mit mir.
+  Ver -- weil bei mir, der Tag ver -- geht so sacht,
+  bricht an die Nacht, Oh Herr, bei mir ver -- weil,
+  Schwin -- det die Kraft, und je -- de Hil -- fe zagt,
+  Hel -- fer der Hilf -- lo -- sen, ver -- weil bei mir.
 }
 
 verseTwo = \lyricmode {
   \set stanza = "2."
-  % Lyrics follow here.
-  Einst strah -- lend schön,
-  % be -- ginnt der letz -- te Verse,
-  be -- ginnt der nächs -- te Verse,
-  Sinkt bald hin -- weg, weicht sanft mit stil -- lem Herz,
-  Wel -- len um Well',
-  mag en -- den Wol -- len nie,
-  % will en -- den erst mit Dir,
-  Wart, Herr, am letz -- ten Tag, ver -- weil mit mir.
+  Wel -- len um Well', ge -- trie -- ben fort und fort,
+  Ja -- gen wir nach, dem Glück, der Zeit, dem Ort,
+  Doch ir -- gend -- wann ver -- geht al -- les im hier,
+  Du der du e -- wig weilst, ver -- weil bei mir.
 }
 
 verseThree = \lyricmode {
   \set stanza = "3."
-  % Lyrics follow here.
   Reich mir die Hand, nimm mich in Dei -- nen Arm,
   Führ mich zum Kreuz, und mei -- ner Sünd' er -- barm,
-  Zeig mir den Weg, kommt, winkt mir noch mal zu,
-  % bis wir uns wie -- der -- sehn, ver -- weil mit mir.
-  führ mich in Dei -- ne Ruh, ver -- weil mit mir.
-  % Ver -- weil mit mir führ mich in Dei -- ne Ruh.
+  Schließ mich ins Herz und wink mir noch mal zu,
+  führ mich in Dei -- ne Ruh, ver -- weil bei mir.
 }
 
 
