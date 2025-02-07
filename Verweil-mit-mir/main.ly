@@ -44,7 +44,7 @@ bass = \relative c {
 
 verseOne = \lyricmode {
   \set stanza = "1."
-  Ver -- weil bei mir, der Tag ver -- geht so sacht,
+  Ver -- weil bei mir, der Tag ver -- geht mit eil',
   bricht an die Nacht, Oh Herr, bei mir ver -- weil,
   Schwin -- det die Kraft, und je -- de Hil -- fe zagt,
   Hel -- fer der Hilf -- lo -- sen, ver -- weil bei mir.
@@ -60,7 +60,7 @@ verseTwo = \lyricmode {
 
 verseThree = \lyricmode {
   \set stanza = "3."
-  Reich mir die Hand, nimm mich in Dei -- nen Arm,
+  Reich mir die Hand, nimm mich an Dei -- nen Arm,
   Führ mich zum Kreuz, und mei -- ner Sünd' er -- barm,
   Schließ mich ins Herz und wink mir noch mal zu,
   führ mich in Dei -- ne Ruh, ver -- weil bei mir.
