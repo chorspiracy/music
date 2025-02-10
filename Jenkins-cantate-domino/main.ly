@@ -14,42 +14,42 @@ global = {
 soprano = \relative e' {
   \global
   % Intro
-  b4 e8 fis a4 | b8 a d,4 fis \fermata |
+  b4 e8 fis a4 | b8 a d,4 fis \fermata | \break
   
   \repeat volta 2 {
   % Strophe
-  e16 e16 e e16 e8 e d8 d | e8 e16 e e8 e g4 | 
-  fis16 fis fis8 fis fis d d | e8. e16 e2 |
+  e16 e16 e e16 e8 e d8 d | e8 e16 e e8 e g4 |
+  fis16 fis fis8 fis fis d d | e8. e16 e2 | \break
   gis16 gis gis gis gis8 gis b b | fis16 fis fis fis fis8 fis a a |
-  e16 e e e e8 e gis gis | dis8. dis16 dis2 |
+  e16 e e e e8 e gis gis | dis8. dis16 dis2 | \break
   
   e8 e16 e e16 e e8 d16 d d8 | e8 e e8 e g4 | 
-  fis16 fis fis fis fis8 fis d d | e8. e16 e2 |
+  fis16 fis fis fis fis8 fis d d | e8. e16 e2 | \break
   gis16 gis gis gis gis8 gis b b | fis16 fis fis fis fis8 fis a a |
-  e16 e e e e8 e gis gis | dis8. dis16 dis2 |
+  e16 e e e e8 e gis gis | dis8. dis16 dis2 | \break
   
   fis8 fis16 fis fis8 fis16 fis gis8 gis |
   a16 a a a a4 b8 r |
   cis16 cis cis cis cis8 cis d8 d | cis8.( b16) a2 \fermata |
-  a8 a16 a a a a8 fis a | b8.( e,16) e8 b'16 b gis8 cis16 b \fermata |
-  c8 c16 c c c c8 a c | d8.( g,16) g8 d'16 d b8 e16 d( | d2. | d | b \fermata |
+  a8 a16 a a a a8 fis a | b8.( e,16) e8 b'16 b gis8 cis16 b \fermata | \break
+  c8 c16 c c c c8 a c | d8.( g,16) g8 d'16 d b8 e16 d( | d2. | d | e) \fermata |
   }
 }
 
 alto = \relative c' {
   \global 
   %Intro
-  e2. | e2. |
+  e2.( | e2.) |
   % Strophe
   b16 b16 b b16 b8 b b8 b | c8 c16 c c8 c c4 | 
   d16 d d8 d d b b | cis8. cis16 cis2 |
   e16 e e e e8 e dis e | d16 d d d d8 d e d |
-  gis,16 gis gis gis gis8 gis gis cis | b8. b16 b2 |
+  cis16 cis cis cis cis8 cis cis cis | b8. b16 b2 |
   
   b8 b16 b b16 b b8 b16 b b8 | c8 c c8 c c4 | 
   d16 d d d d8 d b b | cis8. cis16 cis2 |
   e16 e e e e8 e dis e | d16 d d d d8 d e d |
-  gis,16 gis gis gis gis8 gis gis cis | b8. b16 b2 |
+  cis16 cis cis cis cis8 cis cis cis | b8. b16 b2 |
   
   d8 d16 d d8 d16 d d8 e |
   fis16 fis fis fis fis4 gis8 r |
@@ -66,24 +66,24 @@ alto = \relative c' {
 tenor = \relative e {
   \global
   % Intro
-  b'2. | b2. |
+  b'2.( | b2.) |
   
   g16 g16 g g16 g8 g fis8 fis | g8 g16 g g8 g e4 | 
   fis16 fis fis8 fis fis fis fis | gis8. gis16 gis2 |
   gis16 gis gis gis gis8 gis gis gis | a16 a a a a8 a fis fis |
-  e16 e e e e8 e e e | fis8. fis16 fis2 |
+  gis16 gis gis gis gis8 gis e e | fis8. fis16 fis2 |
 
   g8 g16 g g16 g g8 fis16 fis fis8 | g8 g g8 g e4 | 
   fis16 fis fis fis fis8 fis fis fis | gis8. gis16 gis2 |
   gis16 gis gis gis gis8 gis gis gis | a16 a a a a8 a fis fis |
-  e16 e e e e8 e e e | fis8. fis16 fis4.( gis8) |
+  gis16 gis gis gis gis8 gis e e | fis8. fis16 fis4.( gis8) |
 
   a8 a16 a a8 a16 a a8 a |
   cis16 cis cis cis cis4 e8 r |
-  e16 e e e e8 e fis8 fis | e8.( d16) cis2 \fermata |
+  e16 e e e e8 e <d fis>8 <d fis> | e8.( d16) cis2 \fermata |
 
   cis8 cis16 cis cis cis cis8 cis cis | e8.( b16) b2 \fermata |
-  e8 e16 e e e e8 e e | g8.( d16) d2 |
+  e8 e16 e e e e8 e e | <d g>8.( d16) d2 |
 
   <<a8. d>> <<a16 d>> <<a8 d>> <<a d>> <<a8 d>> r |
   <<a8. d>> <<a16 d>> <<a8 d>> <<a4. d>> |
@@ -93,7 +93,7 @@ tenor = \relative e {
 bass = \relative e {
   \global
   % Intro
-  e2. | e2. |
+  e2.( | e2.) |
   
   % Strophe
   e16 e16 e e16 e8 e b8 b | c8 c16 c c8 c a4 | 
@@ -197,7 +197,7 @@ verseComp = \lyricmode {
   _ _ _ _
 
   _ _ _ _
-  _ _ _ _ _ _ _
+  _ _ _ _ _ _
   De -- o
   Al -- le -- lu -- i -- a
   Al -- le -- lu -- i -- a
