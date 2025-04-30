@@ -62,8 +62,8 @@ verseThree = \lyricmode {
   \set stanza = "3."
   Reich mir die Hand, nimm mich an Dei -- nen Arm,
   Führ mich zum Kreuz, und mei -- ner Sünd' er -- barm,
-  Schließ mich ins Herz und wink mir noch mal zu,
-  führ mich in Dei -- ne Ruh, ver -- weil bei mir.
+  Schließ mich ins Herz und schenk mir dei -- ne Ruh,
+  Im Le -- ben wie im Tod, ver -- weil bei mir.
 }
 
 
