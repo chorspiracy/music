@@ -101,7 +101,8 @@ sopranoVerseThree = \relative c'' {
 }
 
 sopranoVerseFourPartTwo = \relative c'' {
-  g4 g g | g d g g | 
+  g4 d' d |
+  d b a g |
   \time 6/4
   fis r8 fis g4 a g g |
   g4. g8 fis4. g8 |
@@ -188,8 +189,8 @@ altoVerseThree = \relative c'' {
 % ALTO - VERSE FOUR
 
 altoVerseFourPartTwo = \relative c'' {
-  g4 d' d |
-  d b a g | \time 6/4 d4 r8 e g4 fis e d |
+  g4 g g | g d g g | 
+  \time 6/4 d4 r8 e g4 fis e d |
   e r8 d d4. d8 | d4 d r2
 }
 
