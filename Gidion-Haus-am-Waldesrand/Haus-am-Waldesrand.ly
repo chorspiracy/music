@@ -95,9 +95,11 @@ sopranoVerseThree = \relative c'' {
   b4 a8~g g4. fis8 |
   g4 g4 a b8~c |
   b4 a8~g g4. fis8 |
-  g4 g g g | g d g g | 
+  g4
+  g4 d' d |
+  d b e d |
   \time 6/4
-  fis r8 fis g4 a g g g4. g8 fis4. g8 g fis g4 r2 |
+  d r8 fis, g4 a g g g4. g8 fis4. g8 g fis g4 r2 |
 }
 
 sopranoVerseFourPartTwo = \relative c'' {
