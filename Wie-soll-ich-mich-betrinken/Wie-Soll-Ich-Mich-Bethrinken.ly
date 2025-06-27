@@ -26,25 +26,34 @@ soprano = \relative c'' {
   b8( a) g4 a b |
   c2 c4 g |
   a g f8( e) f4 | e2.
-  c4 | b8( c) d4 c b | a2 b4 e |
+  c'4 | b8( c) d4 c b | a2 b4 e, |
   f e d g8( f) | \partial 2. e2.
 }
 
 alto = \relative c' {
   \global
-  c4
-  
+  e8~d | c~d d~e e~d d~c | c4 b8( a b4) e | e a a gis | e2.
+  a8( g) | f4 e8( d) c4 f | f( e8( d) e4 e | f bes,8( a) a( g) a( d) | cis2. d4 |
+  d g g8( fis) g4 | g4 fis g g | c,8( d) c4 f, d' | d( c b)
 }
 
 tenor = \relative c' {
   \global
-  c4
-  
+  \partial 4
+  gis4 | a b c8( d) g,4 | a8( gis) a4 gis gis |
+  a8~b c4 f e8 d | c2.
+  e4 | d8 c b4 a8 g f g | a4 g8 f g4 c | c8 d e4 d8 cis d gis, | a2. 
+  a4 | g8 a b4 c8 d e4 | e( d) d c | c8 b b a a4 g8 a | b4( a gis)
 }
 
 bass = \relative c {
   \global
-  c4
+  \partial 4
+  e4 | f g a8( b) c4 | f,2 e4 e |
+  a8 g f e d b e4 | a,2.
+  a'4 | d, e f8 e d4 | a8 b c4 c c | f8 e d cis d4 d | a2. 
+  fis4 g g'8 fis e4. d8 |
+  c8 a d4 g, c8 b | a b c4 c8 b b a | gis4( a e')
   
 }
 
