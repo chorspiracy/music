@@ -42,7 +42,7 @@ verseTwo = {
 
 preChorusTwo = {
   Brich das Eis, mit dem Schritt  
-  Der je -- cis At -- men zum Wag -- nis macht  
+  Der je -- des At -- men zum Wag -- nis macht  
   Halt mich fest mit Ge -- fühl  
   Es ist so schön, wenn du lachst  
 }
@@ -55,12 +55,12 @@ sopranoVoice = \relative c'' {
   r4 fis r8 fis8 r fis | r4 g r8 g r g8 | r4 fis r8 fis r fis8 | r4 fis r8 fis r fis8 |
   r4 fis r8 fis r fis8 | r4 g r8 g r g8 | r4 fis r8 fis r fis8 | r4 fis r8 fis r fis8 |
 
-  % VERSE ONE / change to Ab minor
+  % VERSE ONE
   \key gis \minor
   dis1 | r | r | r |
   r | r | r | r |
-  b'1( | cis | b | ais |
-  gis1 | gis1) |
+  b'1( | b | b | ais |
+  gis1 | b) |
   r4 gis gis8 ais4 b8( | b4) b b8 cis4 dis8 |
 
   % PRE-CHORUS ONE
@@ -68,6 +68,10 @@ sopranoVoice = \relative c'' {
   r8\fermata gis8. fis16 fis8 fis4. fis8 | fis8. dis gis4 fis8 r4 |
   r2 r8 b8. ais8. | fis2 r8 dis8 e8 gis8 |
   r8 b16 b8. b8 b8. b8. b8 | ais4 r2. |
+  
+  % REFRAIN
+  \key b \minor
+  r2 r8 d( b d) | r2 r8 d( b d | d4 cis8 cis4. b8 b8 | b8 a8 a2.) |
 }
 
 verseSopranoVoice = \lyricmode {
@@ -111,6 +115,15 @@ altoVoice = \relative c' {
   r8\fermata e8. dis16 dis8 b4. gis8 | dis'8. cis e4 dis8 r4 |
   r8 ais8. b8. fis'2 | r8 ais,8. b8. gis4 r4 |
   r8 dis'16 dis8. fis8 fis8. dis8. fis8 | fis4 r2. |
+
+  % REFRAIN
+  \key b \minor
+  \repeat volta 2 {
+    r4 fis16 fis r4 fis16 fis r8 fis16 fis | r4 g16 g r4 g16 g r8 g16 g |
+    r4 g16 g r4 g16 g r8 g16 g | r4 e16 e r4 e16 e r8 e16 e |
+  }
+
+  % VERSE TWO
 }
 
 verseAltoVoice = \lyricmode {
@@ -140,12 +153,13 @@ tenorVoice = \relative c' {
   r1 | r | r | r |
   r8 g8. fis8. d4. b8( | b1) | r8 g'8. fis8. d4. cis8( | cis1) |
   r8 g'8. fis8. d4. b8( | b1) | r8 g'8. fis8. d4. cis8( | cis1) |
+
   % VERSE ONE
   \key gis \minor
   b1 | r | r | r |
   r | r | r | r |
-  dis1( | dis | dis | cis |
-  dis | dis) |
+  dis1( | gis | gis | ais |
+  b | gis) |
   r4 e e8 fis4 gis8(
   gis4) gis gis8 <gis ais>4 <gis b>8 |
 
@@ -154,6 +168,16 @@ tenorVoice = \relative c' {
   r8\fermata gis8. b16 b8 b4. b8 | b8. b b4 ais8 r4 |
   r2 r8 b8. cis8.| dis2 r8 b8 ais8 gis8 |
   r8 b16 b8. dis8 dis8. b8. dis8 | cis4 r2. |
+
+  % REFRAIN
+  \key b \minor
+  r4 d16 d r4 d16 d r8 d16 d | r4 b16 b r4 b16 b r8 b16 b |
+  r4 d16 d r4 d16 d r8 d16 d | r4 cis16 cis r4 cis16 cis r8 cis16 cis |
+
+  % VERSE TWO
+  \key d \minor
+  % r2 r8 cis dis fis( | fis) dis4  cis b4. | r4. fis'4 dis dis8( | dis4. cis8) r2 |
+  % r4 dis cis8 dis4. | fis4 dis8 cis4 fis8 fis8 r8 | r1 | r1 |
 }
 
 verseTenorVoice = \lyricmode {
@@ -191,6 +215,15 @@ bassVoice = \relative c {
   r8\fermata cis8. e16 e8 cis4. cis8 | fis,8. fis gis4 fis8 r4 |
   r8 gis8. dis'8. gis2 | r8 gis8. dis8. e4 r4 |
   r8 cis16 cis8. cis8 cis8. cis8. cis8 | fis,4 r2. |
+
+  % REFRAIN
+  \key b \minor
+  b4 b b b | g g g g | e e e e | a a a a |
+
+  % VERSE TWO
+  \key d \minor
+  d4 d d d8 c | bes4 bes bes bes8 a | g4 g g g8 d' | c4 c c c8 cis |
+  d4 d d d8 c | bes4 bes bes bes8 a | g4 g g g8 d' | c4 c c c8 a |
 }
 
 verseBassVoice = \lyricmode {
