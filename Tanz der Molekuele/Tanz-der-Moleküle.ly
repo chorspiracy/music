@@ -192,6 +192,7 @@ verseAltoVoice = \lyricmode {
   Uh uh uh uh
   Uh, uh uh, Uh, uh uh,
   Uh, uh uh, Uh, uh uh,
+
   % VERSE ONE
   Ich bin hier, weil ich hier hin -- ge -- hör
   Von Kopf bis Fuß bin ich ver -- liebt ver -- liebt
