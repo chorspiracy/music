@@ -15,23 +15,23 @@ global = {
 
 chordNames = \chordmode {
   \global
-  f1*2/bes
+  bes1*2:2
   f:maj7/a
-  f/bes
+  bes:2
   c:sus4
-  f/bes
+  bes:2
   f:maj7/a
-  f/bes
+  bes:2
   c:sus4
-  f/bes
+  bes:2
   f:maj7/a
-  f/bes
-  f:maj7/a
-  f/bes
-  f:maj7/a
-  f/bes
+  bes:2
   c:sus4
-  f/bes
+  bes:2
+  f:maj7/a
+  bes:2
+  c:sus4
+  bes:2
   c:sus4
 
   % Refrain
@@ -41,18 +41,21 @@ chordNames = \chordmode {
   f
   bes
   c
+  f2
+  f2:7
+  c1
   f
 
   % Verse 2
-  f1*2/bes
+  bes1*2:2
   f:maj7/a
-  f/bes
+  bes:2
   c:sus4
-  f/bes
+  bes:2
   f:maj7/a
-  f/bes
+  bes:2
   c:sus4
-  f/bes
+  bes:2
   f/a
 
   % Al fine
@@ -90,8 +93,9 @@ soprano = \relative c'' {
   
   r2 r4 f | a4. g f4 | a4 g8 e4 g g8( |
   g) f4 f e f8( | f)
-  r r4 r f8 a | a8 g4 a8 g4 a8 g8( | g) a
-  g4 f f8 f( | f4) r r2 |
+  r r4 r f8 a | a8 g4 a8 g4 a8 g8( |
+  g) a g4 f f8 a( | a4) r r2 |
+  g8) a g4 f f8 f( | f4) r r2 |
   
   s1 s s s |
   s1 s s s |
@@ -133,10 +137,21 @@ alto = \relative c' {
   % Refrain
   \repeat volta 2 {
     r2 r4 f | d4. d d4 | c4 c8 c4 c e8( | e) d4 d d c8( | c)
-    r8 r4 r4 c8 f | d d4 d8 d4 d8 e( e) e e4 c4 c8 f8( |
-    \mark \markup { \italic "Al Coda" }
-    f4) r4 r2 |
+    r8 r4 r4 c8 f |
+    % d d4 d8 d4 d8 e( e) e e4 c4 c8 f8( | f4) r4 r2 |
+    d d4 d8 d4 d8 e( |
   }
+  \alternative {
+    {
+      e8) e e4 c4 c8 f8( | f4) r4 r2 |
+    }
+    {
+      e8) e e4 c4 c8 c8( |
+      \mark \markup { \italic "(Al Coda)" }
+      c4) r4 r2 |
+    }
+  }
+
   % Verse 2
   r1 r r r |
   r r r r |
@@ -183,8 +198,10 @@ tenor = \relative c' {
   r1 | \xNote f,4 r2. | r4 \xNote c \xNote c r4 |
   
   r2 r4 f | bes4. bes bes4 | a4 a8 g4 g a8( | a) a4 a a a8( | a)
-  r8 r4 r a8 c | bes bes4 bes8 bes4 bes8 c( | c) c c4 bes bes8 c( |
-  c4) r4 r2 |
+  r8 r4 r a8 c | bes bes4 bes8 bes4 bes8 c( |
+  c) c c4 bes bes8 c( | c4) r4 r2 |
+  % wiederholung
+  c8) c c4 bes bes8 a( | a4) r4 r2 |
   
   d,8 c4 d c d8( | d) c4 d c4 r8 |
   c8 bes4 c bes c8( | c4) r8 r2 a8 |
@@ -222,8 +239,9 @@ bass = \relative c {
   
   r2 r4 f | bes,4. bes bes4 | a4 a8 a4 a d8( |
   d) d4 d d f8( | f)
-  r r4 r f8 f | bes,8 bes4 bes8 bes4 bes8 c8( | c) c
-  c4 c c8 f( | f4) r r2 |
+  r r4 r f8 f | bes,8 bes4 bes8 bes4 bes8 c8( |
+  c) c c4 c c8 f( | f4) r r2 |
+  c8) c c4 c c8 f( | f4) r r2 |
   
   s1 s s s |
   s1 s s s |
@@ -254,6 +272,7 @@ verse = \lyricmode {
   Du bist eis -- eis -- kalt
   Mein hun -- gri -- ges Herz durch -- fährt ein bit -- ter -- sü -- ßer Schmerz
   Sag mir wie weit, wie weit, wie weit, wie weit willst du gehn
+  _ wie weit willst du gehn
   
   uh uh uh uh
   uh uh uh uh
@@ -262,8 +281,8 @@ verse = \lyricmode {
   Sag nur,
   wie weit, wie weit, wie weit, wie weit, wie weit,
   wie weit, wie weit, wie weit, wie weit, wie weit,
-  sag nur, wie weit, wie weit, wie weit, wie weit
-  willst du gehn
+  sag nur, wie weit, wie weit, wie weit,
+  wie weit willst du gehn
 
   Sag mir,
   wie weit, wie weit, wie weit, wie weit, wie weit,
@@ -281,6 +300,7 @@ verseTenor = \lyricmode {
   
   Mein hun -- gri -- ges Herz durch -- fährt ein bit -- ter -- sü -- ßer Schmerz
   Sag mir wie weit, wie weit, wie weit, wie weit willst du gehn
+  _ wie weit willst du gehn
 
   Dei -- ne Au -- gen seh'n durch mich durch je -- mand an -- d'ren an
   Wenn dei -- ne Hän -- de mich be -- rühr'n, ver -- fol -- gen sie ei -- nen Plan
