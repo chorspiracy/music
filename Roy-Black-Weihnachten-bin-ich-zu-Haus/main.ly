@@ -22,18 +22,20 @@ sopranoVoice = \relative c' {
   es4( d g f | f es d c)\fermata |
   
   % Music follows here.
-  d2( c | d c4) r | d2( d f f) |
-  bes( a) | g( f) |
-  g( f) | es( d4) r8
+  r4 d2( c4) | r4 d( c2) | r4 d( es g) |
+  f1 | bes2( a) |
+  g( f) | g( f) |
   
-  d8 | c4 c8 c f4 f | c c8 c f4 r |
+  % Doch scheint über Nacht
+  es( d4) r8 d8 | c4 c8 c f4 f |
+  c c8 c f4 r |
   c4 c8 c f4 f8 f | c4 c8 c f4 r8 
   f8 | bes8 bes bes bes a a a a | g4 g f2 |
-  r1 | r2 a2\fermata |
-%  g2( f) | a( f) |
+  es8 es f es d d bes4 |
+  r1 |
   
   % Chorus 1
-  r4 <d, f>2. | r4 <es f>2. |
+  r4 <d f>2. | r4 <es f>2. |
   r4 <c d>2( d4) | r4 <es g>8 <es f>8( <es f>2) |
   r4 f( g2) | r4 e r e |
   r g8 a( a4) g8( c | <c d>1) |
@@ -41,27 +43,32 @@ sopranoVoice = \relative c' {
 
 verseSopranoVoice = \lyricmode {
   % intro
-  ah mh mh uh uh uh uh
+  ah
+  
+  % Prelude
+  mh mh uh uh uh uh
   
   Doch fällt ü -- ber Nacht dann lei -- se der Schnee,
   Fun -- keln die Ster -- ne und glitz -- ert der See,
   Dann weiß ich, dass die Träu -- me auf die Rei -- se gehn,
+  
+  Und vor der Er -- in -- ner -- ung 
 }
 
 altoVoice = \relative c' {
   \global
   \dynamicUp
   % Intro
-  bes4( bes es d | bes bes bes bes)\fermata |
+  bes2( \tuplet 3/2 {es4 d c} | bes1)\fermata |
   
   % Music follows here.
-  bes2( a | bes a4) r | bes2( bes | c d) |
+  bes2( a | bes2. a4) | d2( es | c d) |
   g2.( f4) | es2.( d4) |
   es2.( d4) | c2( c4 bes) |
-  c1( | c) |
-  es | es |
-  a4( g2 f4) | d4( des c4) r4 |
-  <bes es>8 <bes es> <c f> <c es> <bes d> <bes d> bes4 | bes a8 a bes2\fermata |
+  r1 | r1 |
+  es1 | es |
+  a4( g2 f4) | d4( des c b) |
+  bes4( c4 c8 bes8 bes4) | bes a8 a bes2\fermata |
   
   % Chorus
   d4 d8 d f4 f8 f | es4 es8 es c2 |
@@ -74,11 +81,14 @@ altoVoice = \relative c' {
 
 verseAltoVoice = \lyricmode {
   % intro
-  ah mh mh uh uh uh uh
+  ah
+  
+  % Prelude
+  mh mh uh uh uh uh
   mh mh mh
   ah ah
 
-  Und vor der Er -- in -- ner -- ung blei -- ben sie stehn.
+  blei -- ben sie stehn.
   
   % Chorus
   Weih -- nach -- ten, Weih -- nach -- ten bin ich zu Haus, wenn auch nur im Traum
@@ -90,16 +100,17 @@ tenorVoice = \relative c {
   \global
   \dynamicUp
   % Intro
-  fis4( f bes as | g g fis es)\fermata |
+  fis4( f bes as | g2 fis2)\fermata |
  
   % Music follows here.
-  f2( f | f4 e es4) r | f2( g | bes4 a f2) |
+  f2( f | f4 e f es) | f2( g | bes4 a f2) |
   d'4( c2.) | c4( bes2.) |
   bes4( a bes2) | g4( f2.) |
-  as1( | as1) |
+  c'2( bes4 as | g2 as) |
   bes2( a) | bes( a) |
-  d2( c) | a2.( g4) |
-  r ges( f2) | e4( es d2)\fermata |
+  d2( c) | a4( as g f) |
+  g4( f2 fes4) |
+  es4 f8 es d2\fermata |
   
   % Chorus 1
   r4 f2. | r4 g4( bes a) |
@@ -127,12 +138,12 @@ bassVoice = \relative c {
   g g g g f4 f | es es8 es d4 r4
   
   
-  r1 | r1 |
+  as'2 g4 f | es2 f2 |
   
   c2 f | c f |
   g4 d f c |
-  b2 bes | c8( bes as4) g4( ges) |
-  f4 f f2\fermata |
+  b4 bes a as | g4( a bes g4) |
+  ges4 f bes2\fermata |
   
   % Chorus 1
   bes2 d | c f4 f, | bes4 d c bes | f2 f2 |
