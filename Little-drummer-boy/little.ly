@@ -333,26 +333,26 @@ bassVoicePart = \new Staff \with {
   }
 }
 
-\score {
-  \new Staff = "Soprano" \sopranoVoicePart
-  \layout {}
-  \midi { \tempo 2=60 }
-}
-
-\score {
-  \new Staff = "Alto" \altoVoicePart
-  \layout {}
-  \midi { \tempo 2=60 }
-}
-
-\score {
-  \new Staff = "Tenor" \tenorVoicePart
-  \layout {}
-  \midi { \tempo 2=60 }
-}
-
-\score {
-  \new Staff = "Bass" \bassVoicePart
-  \layout {}
-  \midi { \tempo 2=60 }
-}
+% \score {
+%   \new Staff = "Soprano" \sopranoVoicePart
+%   \layout {}
+%   \midi { \tempo 2=60 }
+% }
+% 
+% \score {
+%   \new Staff = "Alto" \altoVoicePart
+%   \layout {}
+%   \midi { \tempo 2=60 }
+% }
+% 
+% \score {
+%   \new Staff = "Tenor" \tenorVoicePart
+%   \layout {}
+%   \midi { \tempo 2=60 }
+% }
+% 
+% \score {
+%   \new Staff = "Bass" \bassVoicePart
+%   \layout {}
+%   \midi { \tempo 2=60 }
+% }
