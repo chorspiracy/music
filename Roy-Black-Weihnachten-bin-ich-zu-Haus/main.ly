@@ -22,14 +22,15 @@ sopranoVoice = \relative c'' {
   d1( | d )\fermata |
   
   % Music follows here.
-  r4 fis,2( e4) | r4 fis( e2) | r4 fis( g b) |
+  r4 fis,2 e4 | r4 fis e2 | r4 fis g b |
   a1 | d2( cis) |
   b( a) | b( a) |
   
   % Doch scheint über Nacht
-  g( fis4) r8 fis8 | e4 e8 e a4 a |
-  e e8 e a4 r |
-  e4 e8 e a4 a8 a | e4 e8 e a4 r8 
+  g( fis4) r4 |
+  
+  r1 | r1 | g1 | g2. r8
+  
   a8 | d8 d d d cis cis cis cis | b4 b a2 |
   g8 g a g fis fis d4 |
   r1 |
@@ -55,13 +56,13 @@ sopranoVoice = \relative c'' {
   \mark \markup { \italic "Fine" } \bar "||"
 
   % Chorus 2
-  fis,4 fis8 fis a4 a8 a | g4 g8 g a4( g) |
+  fis,4 fis8 fis a4 a8 a | g4 g8 g e4( eis) |
   fis4 a g fis | e2( eis) |
   fis4 fis8 fis gis4 gis8 gis | a4 a8 a b2 |
-  cis4 b8 a a4 gis8 a( |
-  a4) a( gis
+  cis4 b8 a a4 gis4 |
+  <gis a>2.
   \mark \markup { \italic "D.S. al Fine" }
-  g) |
+  r4
   \bar "|."
 }
 
@@ -70,10 +71,9 @@ verseSopranoVoice = \lyricmode {
   mh
   
   % Prelude
-  mh mh uh uh uh uh uh uh
+  dm dm dm dm du du du duh, uh uh uh uh
+  bam bam
   
-  Doch fällt ü -- ber Nacht dann lei -- se der Schnee,
-  Fun -- keln die Ster -- ne und glitz -- ert der See,
   Dann weiß ich, dass die Träu -- me auf die Rei -- se gehn,
   
   Und vor der Er -- in -- ner -- ung
@@ -102,19 +102,22 @@ altoVoice = \relative c'' {
   g4( fis b a | a g fis g)\fermata |
   
   % Music follows here.
-  d2( cis | d2. cis4) | fis2( g | e fis) |
+  d2( cis) | d2. cis4 | d2( e | e fis) |
   b2.( a4) | g2.( fis4) |
-  g2.( fis4) | e2( e4 d) |
-  r1 | r1 |
-  g1 | g |
+  g2.( fis4) | e2. r8
+  
+  fis8 | e4 e8 e a4 a |
+  e e8 e a4 r |
+  e4 e8 e a4 a8 a | e4 e8 e a4 r4
+    
   a1 | fis4( f e dis) |
-  d4( e4 e8 d8 d4) | d cis8 cis d2\fermata |
+  d8 d e e e8 d8 d4 | d cis8 cis d2\fermata |
   
   % Chorus
   r4 a( e' d) | r b( d cis) |
   r4 d r d | r cis( d e) |
   r4 d( e2) | r4 e( cis d) |
-  r4 cis r e | r4 cis( d e) |
+  r4 cis r d | r4 cis( d e) |
   r8 g8 g4 r8 e8 e4 |
   a,4 e'2( d4) |
   r4 e r e |
@@ -127,10 +130,11 @@ altoVoice = \relative c'' {
   g4( fis b a | a g fis g) |
 
   % Chorus 2
-  e4 d8 d fis4 fis8 fis | e4 e8 e eis2 |
-  d4 fis e d | d2( cis) |
-  fis4 fis8 fis gis4 gis8 gis | a4 a8 a b2 |
-  cis4 b8 a a4 gis8 a( | a4) cis,( d e) |
+  e4 d8 d e4 e8 e | e4 e8 e d4( cis) |
+  cis4 e d cis | d2( cis) |
+  d4 d8 d d4 e8 e | e4 e8 e d2 |
+  e4 gis8 fis fis4 eis4 |
+  e2. r4
 }
 
 verseAltoVoice = \lyricmode {
@@ -138,10 +142,14 @@ verseAltoVoice = \lyricmode {
   uh
   
   % Prelude
-  mh mh uh uh uh uh
-  mh mh du du
-  du
-
+  dm dm du duh uh uh uh uh
+  
+  Doch fällt ü -- ber Nacht dann lei -- se der Schnee,
+  Fun -- keln die Ster -- ne und glitz -- ert der See,
+  
+  du du
+  
+  Und vor der Er -- in -- ner -- ung
   blei -- ben sie stehn.
   
   % Chorus 1
@@ -155,27 +163,24 @@ verseAltoVoice = \lyricmode {
   ah |
   da -- für. |
   
-  % Chorus 2
-  Weih -- nach -- ten, Weih -- nach -- ten bin ich zu Haus, wenn auch nur im Traum
-  Weih -- nach -- ten steh ich bei Mut -- ter zu Haus un -- ter dem Tan -- nen -- baum
-  du
+  % Chorus 2 (wie Sopran)
 }
 
 tenorVoice = \relative c' {
   \global
   \dynamicUp
   % Intro
-  ais4( a d c | b4 d ais e')\fermata |
+  bes4( a d c | b4 d bes e)\fermata |
  
   % Music follows here.
-  a,2( a | a4 gis a g) | a2( b | d4 cis a4)
+  a,2( a) | a4 gis a g | a2( b) | d4 cis a4
   
   % "Der Himmel ist weit.."
   r8 a |
   d4 d8 d cis4 r8 cis | b4 b8 b a4 a8 a |
   b b b b a4 a | g g8 g fis4 r4
   
-  e'2( d4 c | b2 c) |
+  e'2 d4 c | b2 c |
   d2( cis) | d( cis) |
   fis4( e2 d4) | cis4( c b a) |
   b4( a2 as4) |
@@ -198,11 +203,10 @@ tenorVoice = \relative c' {
   ais4( a d c | b4 d ais e') |
 
   % Chorus 2
-  a,4 a8 a cis4 cis8 cis | b4 b8 b cis2 |
-  a4 a a a | b2( bes) |
-  a4 a8 a b4 bes8 b | b4 b8 b b2 |
-  cis4 b8 a a4 gis8 a( | a1) |
-  
+  a,4 a8 a cis4 cis8 cis | b4 b8 b a2 |
+  a4 cis b a | a1 |
+  a4 a8 cis b4 b8 b | b4 a8 a a2 |
+  a4 a8 cis d4 d | <b cis>2. r4 |
 }
 
 verseTenorVoice = \lyricmode {
@@ -210,14 +214,14 @@ verseTenorVoice = \lyricmode {
   uh
   
   % Prelude
-  mh mh 
+  dmh du du du du du du du du 
   Der Him -- mel ist weit, die Son -- ne die scheint,
   Und ich freu mich wenn das Glück es gut mit mir meint.
   
   % "Doch fällt über.."
-  Uh
+  Bam bam bam bam bam
   
-  mh mh du
+  Ba ba du
   du du
 
   blei -- ben sie stehn.
@@ -259,9 +263,9 @@ bassVoice = \relative c {
   
   % Der Himmel ist weit
   fis4( e2.) | e4( d2.) |
-  d4( cis d2) | b4( a4 d2) |
+  d4 cis d2 | b4 a4 d2 |
   
-  c'2( b4 a | g2 a2) |
+  c'2 b4 a | g2 a2 |
   
   e2 a | e a |
   b4( fis) a( e) |
@@ -276,8 +280,9 @@ bassVoice = \relative c {
   d1( d1) |
 
   % Chorus 2
-  d2 fis, | g a4 a | d4 cis b fis | e4 g4 a8 e a4 |
-  d2 d | cis d | r8 e e2, e4 | a2 a2 |
+  d2 fis, | e4 e' a,2 | d4 fis e d | a2 a4 cis |
+  d4 d8 d d4 e8 d | cis4 cis8 gis' fis2 |
+  e4 e8 a b4 b | a2. r4 |
 }
 
 verseBassVoice = \lyricmode {
@@ -289,9 +294,10 @@ verseBassVoice = \lyricmode {
   Le -- be das Le -- ben wie's mir ge -- fällt,
   
   % "Der Himmel ist weit.."
-  uh uh uh uh,
+  duh duh du du duh, du du duh,
   
-  Uh dm dm dm dm du du, du, uh blei -- ben sie stehn.
+  Bam bam bam bam bam
+  Ba ba ba ba du du, du, du blei -- ben sie stehn.
 
   % Chorus 1
   Dum dum dum dm fm dm fm dm fm dum dm fm
@@ -300,10 +306,7 @@ verseBassVoice = \lyricmode {
   dum dum dum dum dum dum dm da für.
 
   % Chorus 2
-  Dum dum dum dm fm dm fm dm fm dum dm fm
-  Dum dum dum dum fe dum fm dum dum
-  dum dum dum dum dum dm fm dum dum dum
-  dum dum dum dum dum dum dm da für.
+  Dum dum dm fm dum, dm fm dm fm, dum dm fm 
 }
 
 sopranoVoicePart = \new Staff \with {
