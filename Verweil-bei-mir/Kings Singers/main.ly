@@ -94,7 +94,7 @@ rehearsalMidi = #
   <<
     \new ChoirStaff <<
       \new Staff \with {
-        midiInstrument = "choir aahs"
+        midiInstrument = "Piano"
         instrumentName = \markup \center-column { "Soprano" "Alto" }
       } <<
         \new Voice = "soprano" { \voiceOne \soprano }
@@ -110,7 +110,7 @@ rehearsalMidi = #
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "soprano" \verseThree
       \new Staff \with {
-        midiInstrument = "choir aahs"
+        midiInstrument = "Piano"
         instrumentName = \markup \center-column { "Tenor" "Bass" }
       } <<
         \clef bass
@@ -121,7 +121,7 @@ rehearsalMidi = #
   >>
   \layout { }
   \midi {
-    \tempo 4=60
+    \tempo 4=80
   }
 }
 
@@ -129,7 +129,7 @@ rehearsalMidi = #
 \book {
   \bookOutputSuffix "soprano"
   \score {
-    \rehearsalMidi "soprano" "soprano sax" \verseOne
+    \rehearsalMidi "soprano" "piano" \verseOne
     \midi { }
   }
 }
