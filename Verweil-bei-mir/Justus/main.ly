@@ -15,7 +15,8 @@ soprano = \relative c'' {
   r4 g g4 f | es2 bes' | c4. bes8 bes4 as | g1 |
   g2 as4 bes | c2 bes | as4. f8 g4 a | bes1 |
   g2 g4 f | es2 bes' | bes4. as8 as4 g | f1 |
-  r4 f4 g4 as | g4. f8 es4 as | g2 f | es1 |
+  r4 f4 g4-\tweak parenthesized ##t \fermata as |
+  g4. f8 es4 as | g2 f | es1 |
 }
 
 alto = \relative c' {
@@ -23,14 +24,14 @@ alto = \relative c' {
   r4 d d4 d | d4( c) f( es) | g4. f8 es4 f | bes,4( f'2 es4) | \break
   bes2 es4 es | g4( f) f( es) | es4. f8 es4 es | d1 | \break
   es2 f4 d | d4( c) f2 | es4. es8 e4 e | c1 | \break
-  r4 d es4 d | es4. d8 es4 f | f4( es) es( d) | bes1 |
+  r4 d d4 d | es4. d8 es4 f | f4( es) es( d) | bes1 |
 }
 
 tenor = \relative c' {
   \global
   r4 bes bes4 as | g2 bes | es4. d8 d4 bes | bes1 |
   g2 bes4 bes | es2 d | c4. bes8 bes4 f | f2( g4 as) |
-  g4. as8 bes4 as | g2 es'4( d) | c4. c8 c4 bes | as1 |
+  g4. as8 bes4 as | g2 es'4( des) | c4. c8 c4 bes | as1 |
   r4 bes bes4 bes | bes4. as8 g4 c | bes2 bes4( as) | g1 |
 }
 
@@ -64,7 +65,7 @@ verseThree = \lyricmode {
   Reich mir die Hand, nimm mich an Dei -- nen Arm,
   Führ mich zum Kreuz, und mei -- ner Sünd' er -- barm,
   Schließ mich ins Herz und schenk mir dei -- ne Ruh,
-  Im Le -- ben wie im Tod, ver -- weil bei mir.
+  Im Tod, im Le -- ben, Herr, ver -- weil bei mir.
 }
 
 
@@ -80,7 +81,7 @@ rehearsalMidi = #
      \context Staff = $name {
        \set Score.midiMinimumVolume = #0.5
        \set Score.midiMaximumVolume = #0.5
-       \set Score.tempoWholesPerMinute = #(ly:make-moment 60 4)
+       \set Score.tempoWholesPerMinute = #(ly:make-moment 80 4)
        \set Staff.midiMinimumVolume = #0.8
        \set Staff.midiMaximumVolume = #1.0
        \set Staff.midiInstrument = $midiInstrument
@@ -102,13 +103,13 @@ rehearsalMidi = #
         \new Voice = "alto" { \voiceTwo \alto }
       >>
       \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
+        \override VerticalAxisGroup.staff-affinity = #CENTER
       } \lyricsto "soprano" \verseOne
       \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
+        \override VerticalAxisGroup.staff-affinity = #CENTER
       } \lyricsto "soprano" \verseTwo
       \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
+        \override VerticalAxisGroup.staff-affinity = #CENTER
       } \lyricsto "soprano" \verseThree
       \new Staff \with {
         midiInstrument = "Piano"
@@ -130,7 +131,7 @@ rehearsalMidi = #
 \book {
   \bookOutputSuffix "soprano"
   \score {
-    \rehearsalMidi "soprano" "piano" \verseOne
+    \rehearsalMidi "soprano" "Flute" \verseOne
     \midi { }
   }
 }
@@ -138,7 +139,7 @@ rehearsalMidi = #
 \book {
   \bookOutputSuffix "alto"
   \score {
-    \rehearsalMidi "alto" "soprano sax" \verseOne
+    \rehearsalMidi "alto" "Clarinet" \verseOne
     \midi { }
   }
 }
@@ -146,7 +147,7 @@ rehearsalMidi = #
 \book {
   \bookOutputSuffix "tenor"
   \score {
-    \rehearsalMidi "tenor" "tenor sax" \verseOne
+    \rehearsalMidi "tenor" "Cello" \verseOne
     \midi { }
   }
 }
@@ -154,7 +155,7 @@ rehearsalMidi = #
 \book {
   \bookOutputSuffix "bass"
   \score {
-    \rehearsalMidi "bass" "tenor sax" \verseOne
+    \rehearsalMidi "bass" "Cello" \verseOne
     \midi { }
   }
 }
