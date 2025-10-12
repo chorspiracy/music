@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.24.3"
 
 \header {
   title = "Weihnachten bin ich zu Haus"
@@ -274,7 +274,7 @@ bassVoice = \relative c {
   
   % Chorus 1
   d2 fis | e a4 a, | d4 fis e d | a2 a4 a'4 |
-  d,2 d | cis d | r8 e e2, e4 | a2 a2 |
+  d,2 d | cis d | r8 e e,2 e4 | a2 a2 |
   g2 a2 | d2 b | gis2 e4 b'| a2 a2 |
   d2 cis | b2 bes2 | a2 b2 | a2 a4 a |
   d1( d1) |
@@ -311,27 +311,50 @@ verseBassVoice = \lyricmode {
 
 sopranoVoicePart = \new Staff \with {
   instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
+  midiInstrument = "Piano"
 } { \sopranoVoice }
 \addlyrics { \verseSopranoVoice }
 
 altoVoicePart = \new Staff \with {
   instrumentName = "Alto"
-  midiInstrument = "choir aahs"
+  midiInstrument = "Piano"
 } { \altoVoice }
 \addlyrics { \verseAltoVoice }
 
 tenorVoicePart = \new Staff \with {
   instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
+  midiInstrument = "Piano"
 } { \clef "treble_8" \tenorVoice }
 \addlyrics { \verseTenorVoice }
 
 bassVoicePart = \new Staff \with {
   instrumentName = "Bass"
-  midiInstrument = "choir aahs"
+  midiInstrument = "Piano"
 } { \clef bass \bassVoice }
 \addlyrics { \verseBassVoice }
+
+rehearsalMidi = #
+(define-music-function
+ (parser location name midiInstrument lyrics) (string? string? ly:music?)
+ #{
+   \unfoldRepeats <<
+     \new Staff = "soprano" \new Voice = "soprano" { \sopranoVoice }
+     \new Staff = "alto" \new Voice = "alto" { \altoVoice }
+     \new Staff = "tenor" \new Voice = "tenor" { \tenorVoice }
+     \new Staff = "bass" \new Voice = "bass" { \bassVoice }
+     \context Staff = $name {
+       \set Score.midiMinimumVolume = #0.5
+       \set Score.midiMaximumVolume = #0.5
+       \set Score.tempoWholesPerMinute = #(ly:make-moment 80 4)
+       \set Staff.midiMinimumVolume = #0.8
+       \set Staff.midiMaximumVolume = #1.0
+       \set Staff.midiInstrument = $midiInstrument
+     }
+     \new Lyrics \with {
+       alignBelowContext = $name
+     } \lyricsto $name $lyrics
+   >>
+ #})
 
 \score {
   <<
@@ -343,5 +366,38 @@ bassVoicePart = \new Staff \with {
   \layout { }
   \midi {
     \tempo 4=70
+  }
+}
+
+% Rehearsal MIDI files:
+\book {
+  \bookOutputSuffix "soprano"
+  \score {
+    \rehearsalMidi "soprano" "Flute" \verseSopranoVoice
+    \midi { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "alto"
+  \score {
+    \rehearsalMidi "alto" "Clarinet" \verseAltoVoice
+    \midi { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "tenor"
+  \score {
+    \rehearsalMidi "tenor" "Cello" \verseTenorVoice
+    \midi { }
+  }
+}
+
+\book {
+  \bookOutputSuffix "bass"
+  \score {
+    \rehearsalMidi "bass" "Cello" \verseBassVoice
+    \midi { }
   }
 }
